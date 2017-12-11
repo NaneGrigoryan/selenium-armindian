@@ -32,6 +32,7 @@ public class LoginTest {
         Thread.sleep(1000); // mi varkyan sleep e linum minchev message@ ga, hetagayum kogtagorcenq "wait", vor@ aveli chisht e
         assertTrue( "Login was not succeed!",driver.findElement(By.cssSelector(".flash.success")).isDisplayed());
 
+
     }
     // should close the browser
     @AfterMethod
