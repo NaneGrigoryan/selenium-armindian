@@ -19,7 +19,7 @@ public class LoginTest {
     }
     //nor test enq sarqum URL kanchelu hamar
     @Test
-    public void login(){
+    public void login() throws InterruptedException {
         driver.get("http://the-internet.herokuapp.com/login");
         //run the test, the page should be opened.
         // log in enq linum
@@ -28,6 +28,7 @@ public class LoginTest {
         // log in button@ push
         driver.findElement(By.cssSelector("#login button")).click();
         //messagen e cuyc talis
+
         Thread.sleep(1000); // mi varkyan sleep e linum minchev message@ ga, hetagayum kogtagorcenq "wait", vor@ aveli chisht e
         assertTrue( "Login was not succeed!",driver.findElement(By.cssSelector(".flash.success")).isDisplayed());
 
